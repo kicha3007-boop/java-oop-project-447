@@ -1,0 +1,15 @@
+[versions]
+junit = "5.13.4"
+assertj = "3.27.6"
+versions-plugin = "0.61.0"
+spotless-plugin = "8.10.0"
+
+[libraries]
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+assertj-core = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+
+[plugins]
+versions = { id = "io.github.ben-manes.versions", version.ref = "versions-plugin" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless-plugin" }
